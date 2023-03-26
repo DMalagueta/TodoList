@@ -8,6 +8,7 @@ export default function Form({ addTask }) {
     e.preventDefault();
 
     addTask(TaskInputValue);
+    setTaskInputValue("");
   }
 
   return (

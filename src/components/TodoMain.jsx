@@ -2,6 +2,7 @@ import React from 'react'
 import Form from './Form'
 import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import TaskList from './TaskList';
 uuidv4();
 
 export default function TodoMain() {
@@ -13,6 +14,9 @@ export default function TodoMain() {
   }
 
   return (
-    <Form  addTask={addTask}/>
+    <>
+      <Form addTask={addTask} />
+      <TaskList tasks={tasks} />
+    </>
   )
 }
