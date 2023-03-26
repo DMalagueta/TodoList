@@ -1,11 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Form() {
+export default function Form({ addTask }) {
   const [TaskInputValue, setTaskInputValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    addTask(TaskInputValue);
   }
 
   return (
