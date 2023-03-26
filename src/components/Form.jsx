@@ -12,7 +12,7 @@ export default function Form({ addTask }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="todo-form">
       <input
         type="text"
         name="taskInput"

@@ -14,9 +14,9 @@ export default function TodoMain() {
   }
 
   return (
-    <>
+    <div className="todo">
       <Form addTask={addTask} />
       <TaskList tasks={tasks} />
-    </>
+    </div>
   )
 }

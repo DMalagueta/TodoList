@@ -1,6 +1,37 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-border:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+}
+
+.todo{
+    width:70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.todo-form input[type="text"]{
+    padding: 10px;
+    border:1px solid #000;
+}
+
+.todo-form input[type="text"]:focus{
+    outline: none;
+}
+
+.todo-form button{
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.todo-task{
+    display: flex;
+}
+
+.todo-task__name{
+    flex: 1;
 }
